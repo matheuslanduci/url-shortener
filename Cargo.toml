@@ -1,0 +1,17 @@
+[package]
+name = "mls-url-shortener"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = "4.5.1"
+chrono = { version = "0.4.38", features = ["serde"] }
+serde = "1.0.201"
+shuttle-actix-web = "0.44.0"
+shuttle-runtime = "0.44.0"
+shuttle-shared-db = { version = "0.44.0", features = ["postgres", "sqlx"] }
+sqlx = { version = "0.7.4", features = ["chrono"] }
+tokio = "1.37.0"
+validator = { version = "0.18.1", features = ["derive"] }
